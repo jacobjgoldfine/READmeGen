@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   switch (license) {
@@ -21,7 +21,7 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
+// Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   # ${data.title}
@@ -31,38 +31,40 @@ function generateMarkdown(data) {
   
   ## Table of Context
 ___
-  ### [Description] (#Description)
-  ### [Installation] (#Installation)
-  ### [Usage] (#Usage)
-  ### [Contributing] (#Contributing)
-  ### [Tests] (#Tests)
-  ### [Questions] (#Questions)
+  ### [Description] 
+  ### [Installation] 
+  ### [Usage] 
+  ### [Contributing] 
+  ### [Tests]
+  ### [Questions] 
 ___
 
-  ## Description {#Description}
+  ### Description 
 
   ${data.description}
 
-  ## Installation {#Installation}
+  ### Installation 
 
   ${data.install}
 
-  ## Usage {#Usage}
+  ### Usage 
 
-  
+  ${data.usage}
 
-  ## Contributing {#Contributing}
+  ### Contributing
   
   ${data.name}
 
-  ## Tests {#Tests}
+  ### Tests 
 
   ${data.tests}
 
-  ## Questions {#Questions}
+  ### Questions 
 
   Please contact ${data.name} with questions at:
-  ${data.name}'s [Github page] (https://github.com/${data.github})
+
+  ${data.name}'s https://github.com/${data.github}
+
   <${data.email}>
 
 `;

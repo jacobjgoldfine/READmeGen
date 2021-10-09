@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const { prompt } = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
+//Create an array of questions for user input
 const questions = [
   {
     type: "input",
@@ -55,6 +55,11 @@ const questions = [
     type: "input",
     name: "email",
     message: "What is your email?",
+  },
+  {
+    type: "input",
+    name: "fileName",
+    message: "What do you want to call your file?",
   },
 ];
 //use switch statement to give back link badge for badge choice
